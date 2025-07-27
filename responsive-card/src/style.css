@@ -67,7 +67,6 @@ h1 {
 }
 
 .card-container {
-  border: 1px solid rebeccapurple;
   width: 21.6875rem;
 
   flex-shrink: 0;
