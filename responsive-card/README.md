@@ -9,6 +9,6 @@
 - instead of bad look of `flex-wrap: wrap; ` we can use `flex-direction: column;` instead to have better look with smaller screens.
 
 ## The design:
- ![UI-design](/UI/responsive.png)
+ ![UI-design](./UI/responsive.png)
 
 - you can see it live with this link: https://depi-projects.vercel.app/
