@@ -9,3 +9,4 @@ This repository is a collection of simple UI design projects and visual practice
 | #   | Project Folder                               |
 | --- | -------------------------------------------- |
 | 1   | [facebook-login-page](./facebook-login-page) |
+| 2   | [responsive-card](./responsive-card) |
