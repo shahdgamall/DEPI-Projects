@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 *,
 *::after,
 *::before {
@@ -8,6 +10,7 @@
 
 body {
   background-color: #f2f4f7;
+  font-family: sans-serif;
 }
 body,
 html {
@@ -16,8 +19,8 @@ html {
 
 .outer-container {
   max-width: 1440px;
+  padding-top: 7.94rem;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,10 +28,10 @@ html {
 
 .inner-container {
   padding: 0 24px;
-  gap: 88px;
+  /* gap: 4.8rem; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .flex-col {
@@ -41,15 +44,16 @@ html {
 }
 
 .right-sec {
-  width: 400px;
-  height: 357px;
+  padding-top: 1.25rem;
+  width: 25rem;
+  height: 22.3125rem;
   flex-shrink: 0;
   border-radius: 8px;
   background: #fff;
   box-shadow: 4px 4px 4.6px -3px rgba(0, 0, 0, 0.01),
     2px 6px 37px 0 rgba(0, 0, 0, 0.1), 1px 3px 10.6px 0 rgba(0, 0, 0, 0.05);
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 input[type="email"] {
@@ -59,9 +63,9 @@ input[type="email"] {
   border-radius: 5px;
   border: 1px solid #d9d9d9;
   background: #e8f0fe;
-  margin-bottom: 13px;
+  margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.36);
-  font-family: Inter;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -81,13 +85,12 @@ input[type="password"] {
   background: #fff;
   margin-bottom: 13px;
   color: rgba(0, 0, 0, 0.36);
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-input[type="button"] {
+input[value="Log in"] {
   width: 367px;
   height: 53px;
   flex-shrink: 0;
@@ -98,7 +101,7 @@ input[type="button"] {
   color: #fff;
 
   /* btn */
-  font-family: "SF Pro AR Display";
+
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -118,5 +121,175 @@ input[type="button"] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.left-sec {
+  align-self: flex-start;
+  padding-top: 5rem;
+  width: 50%;
+}
+
+.all-right {
+  display: flex;
+  flex-direction: column;
+  height: 25.1125rem;
+}
+
+.all-right p {
+  justify-content: flex-end;
+}
+
+.border {
+  margin-bottom: 1.56rem;
+  margin-top: 0.94rem;
+  border: 1px solid #d9d9d9;
+}
+
+[value="Create new account"] {
+  width: 12.0625rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  background-color: #42b72a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-top: auto;
+  align-self: center;
+}
+
+.content p {
+  font-size: 1.7rem;
+}
+span {
+  font-weight: 900;
+}
+
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #dddfe2;
+  padding: 20px 0;
+  margin-top: 11.94rem;
+  width: 100%;
+ 
   
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.footer-languages {
+  margin-bottom: 20px;
+ 
+}
+
+.language-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.language-links::after{
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: #dddfe2;
+  margin-top: 10px;
+}
+
+.language-links a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.language-links a:hover {
+  background-color: #f2f3f5;
+}
+
+.language-links a.active {
+  color: #737373;
+  font-weight: 600;
+}
+
+.language-links a:last-child {
+  background-color: #f2f3f5;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 10rem;
+}
+
+.link-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.link-group a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 14px;
+  transition: text-decoration 0.2s;
+}
+
+.link-group a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-copyright p {
+  color: #737373;
+  font-size: 12px;
+
+  padding-left: 10rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 16px;
+  }
+
+  .language-links {
+    gap: 5px;
+  }
+
+  .language-links a {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .link-group {
+    gap: 15px;
+  }
+
+  .link-group a {
+    font-size: 11px;
+  }
 }
